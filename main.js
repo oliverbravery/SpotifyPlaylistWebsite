@@ -1,4 +1,5 @@
-user_id = "oliverbravery";
+apiUrl = "localhost:5000/";
+user_id = "spotify user id HERE";
 playlist_url = "https://api.spotify.com/v1/users/"+user_id+"/playlists";
 TrackNumAndURI = [];
 
@@ -19,7 +20,7 @@ function getCookie(name) {
 function apiGetAccessToken(data) {
     var xmlHttp = new XMLHttpRequest();
     var temp = getCookie("ThePasswordString");
-    xmlHttp.open( "GET", `https://www.bangers.online/GetAccessToken?cookie=${temp}`, false)
+    xmlHttp.open( "GET", `https://${apiUrl}GetAccessToken?cookie=${temp}`, false)
     xmlHttp.withCredentials = true;
     xmlHttp.send(data);
     var res = xmlHttp.responseText;
@@ -167,5 +168,5 @@ function LoginFunc() {
     var hashedPassword = sjcl.codec.hex.fromBits(hashedPasswordB);  
     hashedPasswordB = sjcl.hash.sha256.hash(hashedPassword + d.getMinutes());
     var hashedPassword = sjcl.codec.hex.fromBits(hashedPasswordB);  
-    httpGetLogin(`https://www.bangers.online/Login?password=${hashedPassword}`);
+    httpGetLogin(`https://${apiUrl}Login?password=${hashedPassword}`);
 }
