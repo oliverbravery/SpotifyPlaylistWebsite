@@ -1,0 +1,62 @@
+.albumArt {
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: auto;
+    width: calc(100vw - scrollbarWidth);
+    border: 5px solid #FFFF00;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+ol {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+}
+
+.headerElement {
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding-top: 0;
+    margin-top: -5px;
+    width: max-content;
+    max-height: 120px;
+    position: fixed;
+    background: rgb(216, 216, 216);
+    padding-right: 100vw;
+    padding-left: 100vw;
+    padding-bottom: 10px;
+    border: 5px solid #FFFF00;
+}
+
+.songList {
+    margin: 0;
+    padding: 0;
+    margin-top: 120px;
+}
+
+.songItem {
+    margin: 0;
+    padding: 0;
+    background:rgb(rgb(153, 153, 153));
+    color: black;
+    padding: 35px;
+}

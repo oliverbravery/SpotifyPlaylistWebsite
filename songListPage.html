@@ -1,0 +1,21 @@
+<!--OliJB-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <script src="main.js"></script>
+        <link rel="stylesheet" href="main.css">
+        <title>Bangers Playlist Editor</title>
+    </head>
+    <body id="body" onload="DisplayPlaylistTracks('bangers')">
+        <div class="headerElement">
+            <h1>Bangers Collab Playlist Editor</h1>
+            <p>Search By Song Title or Track Number</p>
+            <input type="text" placeholder="e.g. 'Come Together'" id="trackNumberInput"/>
+            <button onclick="SearchByTitle()" >Search</button>
+        </div>
+        <div class="songList">
+            <ol id="SongList">
+        </div>
+    </body>
+</html>
